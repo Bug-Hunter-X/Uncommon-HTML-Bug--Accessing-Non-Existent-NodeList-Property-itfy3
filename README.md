@@ -1,0 +1,3 @@
+# Uncommon HTML Bug: Accessing Non-Existent NodeList Property
+
+This repository demonstrates an uncommon bug related to accessing non-existent properties of a NodeList object in JavaScript within an HTML context.  The bug occurs because NodeLists, while array-like, don't have the same properties as arrays. Attempting to access a property that doesn't exist throws an error.  The solution shows how to correctly iterate and access data within the NodeList.
