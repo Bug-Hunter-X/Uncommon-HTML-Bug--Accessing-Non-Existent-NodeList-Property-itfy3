@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is inside a div.
+  </div>
+
+  <script>
+    // Attempting to access a non-existent property of a NodeList
+    const divs = document.querySelectorAll('div');
+    console.log(divs.myNonExistentProperty); // This will throw an error
+  </script>
+</body>
+</html>
