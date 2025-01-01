@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is inside a div.
+  </div>
+
+  <script>
+    const divs = document.querySelectorAll('div');
+    // Correct way to access elements in NodeList
+    for (let i = 0; i < divs.length; i++) {
+      console.log(divs[i].textContent); // Access text content correctly
+    }
+
+    //Another approach using forEach loop:
+    divs.forEach(div => {
+        console.log(div.textContent);
+    })
+  </script>
+</body>
+</html>
